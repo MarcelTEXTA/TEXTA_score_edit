@@ -1,0 +1,158 @@
+/* Style pour QPushButton */
+QPushButton {
+    background-color: rgb(40, 40, 100);
+    color: rgb(220, 220, 250);
+    border: none;
+    border-radius: 5px; /* Coins légèrement arrondis */
+    padding: 5px 8px; /* Padding réduit pour un style plus compact */
+    font-size: 12px; /* Taille de police réduite pour une meilleure densité */
+    transition: background-color 0.2s ease; /* Transition rapide sur hover */
+    box-shadow: none; /* Pas d'ombre pour une apparence plus serrée */
+}
+
+QPushButton:hover {
+    background-color: rgb(80, 80, 150);
+}
+
+QPushButton:pressed {
+    background-color: rgb(60, 60, 130);
+    padding-left: 6px; /* Légère déformation pour l'interaction */
+    padding-top: 6px;
+}
+
+/* Style pour QMainWindow */
+QMainWindow {
+    background-color: rgb(30, 30, 80); /* Couleur de fond bleu foncé */
+    border: none;
+}
+
+/* Style pour QLabel */
+QLabel {
+    color: rgb(180, 180, 220); /* Couleur bleu clair pour le texte */
+    font-size: 12px; /* Taille réduite pour compacité */
+}
+
+/* Style pour QFrame (sidebar, etc.) */
+QFrame {
+    background-color: rgb(35, 35, 90);
+    color: rgb(180, 180, 220);
+    border: none;
+    border-radius: 8px; /* Coins légèrement arrondis */
+    padding: 5px; /* Padding réduit */
+}
+
+/* Style pour les onglets (QTabBar) */
+QTabBar::tab {
+    background: rgb(30, 30, 80);
+    border: 1px solid rgb(60, 60, 120); /* Bordures plus fines */
+    margin: 1px; /* Réduction de l'espace entre les onglets */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: rgb(200, 200, 240);
+    padding: 5px; /* Moins d'espace autour du texte pour un aspect plus compact */
+    font-size: 12px; /* Taille de police réduite */
+    transition: background-color 0.2s ease;
+}
+
+QTabBar::tab:selected {
+    background: rgb(80, 80, 160);
+    color: white;
+    border-color: rgb(80, 80, 160);
+}
+
+QTabBar::tab:hover {
+    background: rgb(60, 60, 140);
+    color: white;
+}
+
+/* Style pour la zone de contenu des onglets */
+QTabWidget::pane {
+    border-radius: 5px; /* Coins légèrement arrondis */
+    background-color: rgb(35, 35, 85); /* Fond bleu plus léger pour les onglets */
+    padding: 5px; /* Padding réduit autour du contenu */
+}
+
+/* Style pour les entrées (QLineEdit, etc.) */
+QLineEdit {
+    background-color: rgb(45, 45, 110);
+    border: 1px solid rgb(100, 100, 160);
+    border-radius: 5px;
+    padding: 5px; /* Padding réduit pour un champ de saisie plus compact */
+    font-size: 12px; /* Police plus petite pour correspondre à l'interface compacte */
+    color: rgb(220, 220, 250);
+    transition: border-color 0.2s ease; /* Transition rapide pour un style réactif */
+}
+
+QLineEdit:focus {
+    border-color: rgb(100, 100, 250); /* Bordure bleu clair lors du focus */
+}
+
+/* Style pour QMenu */
+QMenu {
+    background-color: rgba(35, 35, 85, 200); /* Fond bleu légèrement transparent */
+    border-radius: 8px; /* Coins arrondis */
+    padding: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Ombre légère pour l'effet flottant */
+    backdrop-filter: blur(10px); /* Flou de l'arrière-plan */
+}
+
+/* Style pour QMenuItem */
+QMenu::item {
+    background-color: transparent;
+    color: rgb(180, 180, 240);
+    padding: 8px 20px;
+    font-size: 14px;
+    border-radius: 5px; /* Coins arrondis pour chaque item */
+    transition: background-color 0.3s ease;
+}
+
+/* Effet lors du survol d'un élément de menu */
+QMenu::item:hover {
+    background-color: rgba(100, 100, 250, 0.2); /* Couleur de fond lors du survol */
+    color: white;
+}
+
+/* Effet pour l'élément sélectionné */
+QMenu::item:selected {
+    background-color: rgba(100, 100, 250, 0.3); /* Fond sélectionné */
+    color: white;
+}
+
+/* Pour les sous-menus (QMenuItems avec sous-menu) */
+QMenu::item:has-submenu {
+    padding-right: 30px; /* Espace à droite pour un petit triangle ou icône */
+}
+
+QMenu::item:has-submenu:after {
+    content: "►"; /* Ajouter un indicateur pour les sous-menus */
+    color: rgb(180, 180, 240);
+    padding-left: 5px;
+}
+
+/* Style de QMenuBar */
+QMenuBar {
+    background-color: rgba(30, 30, 80, 180); /* Fond bleu transparent du menu */
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5); /* Légère ombre */
+    backdrop-filter: blur(10px); /* Effet de flou */
+}
+
+/* Style des éléments de la QMenuBar */
+QMenuBar::item {
+    color: rgb(180, 180, 220);
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+QMenuBar::item:hover {
+    background-color: rgba(100, 100, 250, 0.2); /* Fond au survol */
+    color: white;
+}
+
+QMenuBar::item:selected {
+    background-color: rgba(100, 100, 250, 0.3); /* Fond sélectionné */
+    color: white;
+}

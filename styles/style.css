@@ -1,0 +1,164 @@
+/* Style pour QPushButton */
+QPushButton {
+    background-color: rgb(175, 175, 175);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 10px; /* Coins légèrement arrondis */
+    padding: 5px 6px; /* Padding réduit pour un style plus compact */
+    font-size: 12px; /* Taille de police réduite pour une meilleure densité */
+}
+
+QPushButton:hover {
+    background-color: rgb(150, 150, 250);
+}
+
+QPushButton[active="true"] {
+    background-color: rgb(150, 150, 250);
+}
+
+
+QPushButton:pressed {
+    background-color: rgb(120, 120, 220);
+    padding-top: 6px;
+}
+
+/* Style pour QMainWindow */
+QMainWindow {
+    background-color: rgb(240, 240, 240); /* Couleur de fond douce */
+    border: none;
+}
+
+/* Style pour QLabel */
+QLabel {
+    color: rgb(50, 50, 50); /* Couleur grise douce */
+    font-size: 12px; /* Taille réduite pour compacité */
+    background-color: rgba(255, 255, 255, 0);
+}
+
+/* Style pour QFrame (sidebar, etc.) */
+QFrame {
+    background-color: rgb(225, 225, 225);
+    color: rgb(50, 50, 50);
+    border: none;
+    border-radius: 8px; /* Coins légèrement arrondis */
+    padding: 3px; /* Padding réduit */
+}
+
+QComboBox {
+    border: 2px solid rgb(150, 150, 250);
+    border-radius: 10px;
+    background-color: rgb(175, 175, 175);
+    padding: 5px 6px;
+    font-size: 12px;
+}
+
+/* QComboBox::down-arrow {
+    image: url(:/path/to/your/image.png);
+} */
+
+QComboBox::drop-down {
+    border: none;
+    width: 20px;
+}
+
+QComboBox QAbstractItemView {
+    background-color: white;
+}
+
+/* Style pour les onglets (QTabBar) */
+QTabBar::tab {
+    background: rgb(175, 175, 175);
+    margin: 1px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: black;
+    padding: 5px;
+    font-size: 12px; /* Taille de police réduite */
+}
+
+QTabBar::tab:selected {
+    background: rgb(150, 150, 250);
+    color: white;
+}
+
+QTabBar::tab:hover {
+    background: rgb(80, 80, 250);
+    color: white;
+}
+
+/* Style pour la zone de contenu des onglets */
+QTabWidget::pane {
+    border-radius: 5px; /* Coins légèrement arrondis */
+    background-color: rgb(240, 240, 240); /* Fond des onglets plus léger */
+    padding: 5px; /* Padding réduit autour du contenu */
+}
+
+/* Style pour les entrées (QLineEdit, etc.) */
+QLineEdit {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(175, 175, 175);
+    border-radius: 5px;
+    padding: 5px; /* Padding réduit pour un champ de saisie plus compact */
+    font-size: 12px; /* Police plus petite pour correspondre à l'interface compacte */
+    color: rgb(50, 50, 50);
+}
+
+QLineEdit:focus {
+    border-color: rgb(150, 150, 250); /* Bordure bleu clair lors du focus */
+}
+
+/* Style pour QMenu */
+QMenu {
+    background-color: rgba(255, 255, 255, 0.75); /* Fond légèrement transparent */
+    border-radius: 8px; /* Coins arrondis */
+    padding: 5px;
+}
+
+/* Style pour QMenuItem */
+QMenu::item {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(50, 50, 50);
+    padding: 8px 20px;
+    font-size: 12px;
+    border-radius: 5px; /* Coins arrondis pour chaque item */
+}
+
+/* Effet lors du survol d'un élément de menu */
+QMenu::item:hover {
+    background-color: rgba(100, 100, 250, 0.2); /* Couleur de fond lors du survol */
+    color: white;
+}
+
+/* Effet pour l'élément sélectionné */
+QMenu::item:selected {
+    background-color: rgba(100, 100, 250, 0.3); /* Fond sélectionné */
+    color: white;
+}
+
+/* Pour les sous-menus (QMenuItems avec sous-menu) */
+QMenu::item:has-submenu {
+    padding-right: 30px;
+}
+
+QMenu::item:has-submenu:after {
+    color: rgb(50, 50, 50);
+    padding-left: 5px;
+}
+
+/* Style des éléments de la QMenuBar */
+QMenuBar::item {
+    color: rgb(50, 50, 50);
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+QMenuBar::item:hover {
+    background-color: rgba(100, 100, 250, 0.2); /* Fond au survol */
+    color: white;
+}
+
+QMenuBar::item:selected {
+    background-color: rgba(100, 100, 250, 0.3); /* Fond sélectionné */
+    color: white;
+}

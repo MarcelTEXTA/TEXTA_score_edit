@@ -1,0 +1,153 @@
+/* Style pour QPushButton */
+QPushButton {
+    background-color: rgb(190, 220, 255); /* Couleur bleu clair */
+    color: rgb(0, 0, 50); /* Texte sombre */
+    border: 1px solid rgb(100, 150, 200); /* Bordure avec effet de relief */
+    border-radius: 3px; /* Coins légèrement arrondis */
+    padding: 5px 10px; /* Padding pour plus de confort */
+    font-size: 12px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2), 0px 1px 3px rgba(255, 255, 255, 0.3); /* Ombre pour l'effet de relief */
+    transition: background-color 0.2s ease, box-shadow 0.2s ease; /* Transition douce */
+}
+
+QPushButton:hover {
+    background-color: rgb(180, 210, 250); /* Fond bleu clair au survol */
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3), 0px 2px 4px rgba(255, 255, 255, 0.4); /* Ombre plus marquée */
+}
+
+QPushButton:pressed {
+    background-color: rgb(160, 190, 240); /* Fond plus foncé au clic */
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.4); /* Ombre interne pour l'effet enfoncé */
+}
+
+/* Style pour QMainWindow */
+QMainWindow {
+    background-color: rgb(240, 240, 255); /* Fond blanc avec une touche de bleu */
+    border: none;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.1); /* Ombre interne pour effet de profondeur */
+}
+
+/* Style pour QLabel */
+QLabel {
+    color: rgb(20, 20, 50); /* Texte sombre pour une bonne visibilité */
+    font-size: 12px; /* Police plus petite pour la compacité */
+}
+
+/* Style pour QFrame (sidebar, etc.) */
+QFrame {
+    background-color: rgb(220, 240, 255); /* Bleu clair avec effet de verre */
+    color: rgb(20, 20, 50);
+    border: 1px solid rgb(150, 190, 230); /* Bordure 3D */
+    border-radius: 5px; /* Coins légèrement arrondis */
+    padding: 8px; /* Un peu plus d'espace pour un aspect aéré */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1), 0px 2px 3px rgba(255, 255, 255, 0.3); /* Ombre subtile */
+}
+
+/* Style pour les onglets (QTabBar) */
+QTabBar::tab {
+    background: rgb(200, 220, 255);
+    border: 1px solid rgb(160, 190, 220); /* Bordure 3D légère */
+    margin: 2px;
+    color: rgb(0, 0, 50);
+    padding: 6px;
+    font-size: 12px;
+    box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.2); /* Ombre interne pour effet enfoncé */
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+QTabBar::tab:selected {
+    background: rgb(160, 190, 240);
+    color: rgb(0, 0, 50);
+    border-color: rgb(140, 170, 200);
+}
+
+QTabBar::tab:hover {
+    background: rgb(180, 210, 255);
+    box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Style pour la zone de contenu des onglets */
+QTabWidget::pane {
+    background-color: rgb(240, 240, 255); /* Fond plus clair pour les onglets */
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.1); /* Ombre interne pour plus de profondeur */
+}
+
+/* Style pour les entrées (QLineEdit, etc.) */
+QLineEdit {
+    background-color: rgb(255, 255, 255); /* Fond blanc pour les champs de texte */
+    border: 1px solid rgb(150, 190, 230); /* Bordure avec un effet de verre */
+    padding: 5px;
+    font-size: 12px;
+    color: rgb(0, 0, 50);
+    border-radius: 5px; /* Coins légèrement arrondis */
+    transition: border-color 0.2s ease; /* Transition douce */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1), inset 0px 1px 3px rgba(255, 255, 255, 0.3); /* Ombres subtiles */
+}
+
+QLineEdit:focus {
+    border-color: rgb(100, 150, 200); /* Bordure bleue lors du focus */
+}
+
+/* Style pour QMenu */
+QMenu {
+    background-color: rgba(240, 240, 255, 0.9); /* Fond transparent avec une teinte bleue */
+    border: 1px solid rgb(150, 190, 230);
+    padding: 6px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2), 0px 2px 4px rgba(255, 255, 255, 0.3); /* Ombre 3D */
+}
+
+/* Style pour QMenuItem */
+QMenu::item {
+    background-color: transparent;
+    color: rgb(0, 0, 50);
+    padding: 8px 16px;
+    font-size: 12px;
+    border-radius: 4px; /* Coins légèrement arrondis pour les éléments */
+    transition: background-color 0.3s ease;
+}
+
+QMenu::item:hover {
+    background-color: rgba(160, 190, 240, 0.2); /* Fond au survol */
+}
+
+QMenu::item:selected {
+    background-color: rgba(140, 170, 200, 0.3); /* Fond sélectionné */
+}
+
+/* Pour les sous-menus (QMenuItems avec sous-menu) */
+QMenu::item:has-submenu {
+    padding-right: 30px; /* Espace à droite pour un petit triangle ou icône */
+}
+
+QMenu::item:has-submenu:after {
+    content: "►"; /* Ajouter un indicateur pour les sous-menus */
+    color: rgb(0, 0, 50);
+}
+
+/* Style de QMenuBar */
+QMenuBar {
+    background-color: rgba(240, 240, 255, 0.9); /* Fond clair pour la barre de menu */
+    border: 1px solid rgb(150, 190, 230);
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2); /* Ombre pour effet de relief */
+}
+
+/* Style des éléments de la QMenuBar */
+QMenuBar::item {
+    color: rgb(0, 0, 50);
+    padding: 8px 16px;
+    font-size: 12px;
+    transition: background-color 0.3s ease;
+}
+
+QMenuBar::item:hover {
+    background-color: rgba(160, 190, 240, 0.2); /* Fond au survol */
+}
+
+QMenuBar::item:selected {
+    background-color: rgba(140, 170, 200, 0.3); /* Fond sélectionné */
+}
