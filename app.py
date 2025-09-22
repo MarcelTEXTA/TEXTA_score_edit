@@ -1,3 +1,7 @@
+# 2024-2025 MarcelTEXTA : TEXTA SM edit 1.0
+# You can modify the code and publish improved versions by sending me an email in the README.
+# What I did: separated classes and improved functions and methods. Improved the main window interface.
+
 import sys
 import os
 import json
@@ -836,6 +840,7 @@ class ThemeDialog(QDialog):
             QApplication.instance().setStyleSheet(qss)
         file.close()
 
+# Barre d'option de l'interface
 class OptionsBar(QWidget):
     def __init__(self, canvas, parent=None, main_window=None):
         super(OptionsBar, self).__init__(parent)
@@ -906,6 +911,7 @@ class OptionsBar(QWidget):
         animation.start()
         print("acount server open")
 
+    # Menus de l'application
     def show_menu(self):
         # Crée le menu contextuel principal
         menu_button_actived = QMenu(self)
@@ -1209,6 +1215,8 @@ class OptionsBar(QWidget):
         dialog = ThemeDialog(self)
         dialog.exec_()
 
+# Fenêtre de l'interface
+# aucune gestion de fichier, ouverture et toutes les fonctions ne sont pas défini.
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
