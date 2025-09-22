@@ -1,0 +1,1 @@
+This is the folder containing the icons and graphic elements for the interface (res). I haven't included all the icons and elements, so you are free to modify the icons and themes.
