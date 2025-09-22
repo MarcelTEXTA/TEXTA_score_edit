@@ -1222,7 +1222,7 @@ class MainWindow(QMainWindow):
         super().__init__()
 
         self.setMinimumSize(500, 500)
-        self.setWindowTitle("TEXTA Score Edit")
+        self.setWindowTitle("TEXTA SM Edit")
         self.setGeometry(100, 100, 800, 600)
 
         # Widget central
