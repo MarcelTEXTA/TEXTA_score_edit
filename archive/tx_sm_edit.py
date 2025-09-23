@@ -5,7 +5,7 @@ from tkinter import messagebox, filedialog, simpledialog
 from tkinter import ttk
 import tkinter as tk
 from PIL import Image, ImageTk
-import pygame
+import pygame # pour la manipulation des sons
 import os
 import sys
 import glob
