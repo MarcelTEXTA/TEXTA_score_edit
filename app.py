@@ -10,6 +10,9 @@ from PyQt5.QtGui import QPainter, QColor, QPen, QIcon, QFont, QImage, QPixmap
 from PyQt5.QtCore import Qt, QPoint, QSize, QPropertyAnimation, QFile, QRect, QEasingCurve
 from PyQt5.QtWidgets import QFileDialog
 
+# Cette version de TEXTA score edit sera bientôt disponible avec C#, le dépot n'est pas encore disponible.
+# Les fonction Decrypter ne sont pas encore disponible ainsi que l'export des fichiers.
+
 class MidiGridEditor(QWidget):
     def __init__(self):
         super().__init__()
