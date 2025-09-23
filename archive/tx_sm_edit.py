@@ -1,6 +1,6 @@
-# 2024 - TEXTA SM edit bêta version
-# L'executable de cette version est disponible dans le même dossier
-# Erreur : icons introuvables; erreur de syntax pour les chemins d'accès.
+message = """2024 - TEXTA SM edit bêta version
+L'executable de cette version est disponible dans le même dossier
+Erreur : icons introuvables; erreur de syntax pour les chemins d'accès."""
 
 from tkinter import *
 from tkinter import scrolledtext
@@ -17,6 +17,7 @@ import mido
 import ctypes
 
 print("Please comment the errors")
+print(message)
 
 pygame.mixer.init()
 
