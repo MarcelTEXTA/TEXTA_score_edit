@@ -746,39 +746,37 @@ def select_in_canvas():
 select_button = ttk.Button(toolbar, icon="IconApp/custombar/selections.png")
 select_button.pack(side=tk.LEFT, padx=2, pady=2)
 
-gomme_button = ttk.Button(toolbar, icon="IconApp/custombar")
+gomme_button = ttk.Button(toolbar, icon="IconApp/custombar/gomme.png")
 gomme_button.pack(side=tk.LEFT, padx=2, pady=2)
 
-loupe_button = ttk.Button(toolbar, icon="IconApp/custombar")
+loupe_button = ttk.Button(toolbar, icon="IconApp/custombar/loupe.png")
 loupe_button.pack(side=tk.LEFT, padx=2, pady=2)
 
-insert_button = ttk.Button(toolbar, icon="IconApp/custombar")
+insert_button = ttk.Button(toolbar, icon="IconApp/custombar/insertion.png")
 insert_button.pack(side=tk.LEFT, padx=2, pady=2)
 
-ciseaux_button = ttk.Button(toolbar, icon="IconApp/custombar")
+ciseaux_button = ttk.Button(toolbar, icon="IconApp/custombar/ciseaux.png")
 ciseaux_button.pack(side=tk.LEFT, padx=2, pady=2)
 
-colle_button = ttk.Button(toolbar, icon="IconApp/custombar")
+colle_button = ttk.Button(toolbar, icon="IconApp/custombar/colle.png")
 colle_button.pack(side=tk.LEFT, padx=2, pady=2)
 
-
-quantifications_button = ttk.Button(toolbar, icon="IconApp/custombar")
+quantifications_button = ttk.Button(toolbar, icon="IconApp/custombar/quantifications.png")
 quantifications_button.pack(side=tk.LEFT, padx=2, pady=2)
 
-
-export_select_button = ttk.Button(toolbar, icon="IconApp/custombar")
+export_select_button = ttk.Button(toolbar, icon="IconApp/custombar/selection à exporter.png")
 export_select_button.pack(side=tk.LEFT, padx=2, pady=2)
 
 separator = ttk.Separator(toolbar, orient='vertical')
 separator.pack(fill='y', side=LEFT, padx=10, pady=5)
 
-one_ton_plus_button = ttk.Button(toolbar, icon="IconApp/custombar")
+one_ton_plus_button = ttk.Button(toolbar, icon="IconApp/custombar/note_supp.png")
 one_ton_plus_button.pack(side=tk.LEFT, padx=2, pady=2)
 
-one_ton_moin_Button = ttk.Button(toolbar, icon="IconApp/custombar")
+one_ton_moin_Button = ttk.Button(toolbar, icon="IconApp/custombar/note_inf.png")
 one_ton_moin_Button.pack(side=tk.LEFT, padx=2, pady=2)
 
-oct_supp_Button = ttk.Button(toolbar, icon="IconApp/custombar")
+oct_supp_Button = ttk.Button(toolbar, icon="IconApp/custombar/oct_supp.png")
 oct_supp_Button.pack(side=tk.LEFT, padx=2, pady=2)
 
 one_ton_plus_moin_Button = ttk.Button(toolbar, text="- 1/2 ton")
