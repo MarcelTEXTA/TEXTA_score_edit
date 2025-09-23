@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image : url("https://i.pinimg.com/originals/cf/1e/58/cf1e582af019db59524768b895433020.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	height: auto;
+	margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/*.left {
+    background-color: rgba(225, 225, 225, 0.6);
+	backdrop-filter: blur(50px); autres navigateurs 
+	-webkit-backdrop-filter: blur(50px); macOS iOS : Safari 
+    width: 10%;
+    max-width: 1000px;
+    align-items: left;
+    justify-content: left;
+    min-height: 100vh;
+    padding: 20px;
+    padding-top: 40px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    overflow: auto;
+} */
+
+.center {
+    background-color: rgba(255, 255, 255, 0.6);
+	backdrop-filter: blur(25px); /* autres navigateurs */
+	-webkit-backdrop-filter: blur(25px); /* macOS iOS : Safari */
+    width: 60%;
+    max-width: 1200px;
+    min-height: 100px;
+    padding: 20px;
+    padding-top: 40px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    border-radius: 10px;
+    overflow: auto;
+	overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+    .center {
+        width: 100%;
+        max-width: none;
+        min-height: auto;
+        padding: 10px;
+        padding-top: 20px;
+        overflow: auto;
+    }
+}
+
+.source{
+    padding-bottom: 0px;
+    margin: opx;
+    font-size: 10pt;
+}
+
+.capture{
+	border-radius: 10px;
+	width: 100%;
+}
+
+p{
+    padding-bottom: 5px;
+	margin: 15px;
+    font-size: 14pt;
+}
+
+h1{
+    padding-bottom: 7px;
+    color: darkblue;
+}
+
+h2{
+    padding-bottom: 5px;
+	margin: 5px;
+}
+
+h3{
+    padding-bottom: 5px;
+	margin: 10px;
+}
+
+a{
+	text-decoration: none;
+	color: rgb(0, 0, 255);
+}
+
+a:hover{
+	text-decoration: underline;
+	color: rgb(255, 0, 255);
+}
+
+hr{
+    color: black;
+}
+
+button{
+    background-color: rgb(110, 110, 255);
+    border-radius: 10px;
+}
