@@ -1,4 +1,4 @@
-# TEXATA SM edit
+# TEXTA SM edit
 ## Explanation 
 TEXTA SM edit is an open-source score editor. This version is not available but can be run with a Python environment by cloning the GitHub repository.
 ## Contact me
